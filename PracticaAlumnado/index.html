@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Gestión de alumnado</title>
+        <link rel="stylesheet" href="estilos/estilos.css">
+    </head>
+
+    <body>
+
+        <h1>Inscripción de alumnado</h1>
+
+        <form method="post" action="PHP/insertar.php">
+
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+            <br><br>
+
+            <label>Apellidos:</label>
+            <input type="text" name="apellidos" required>
+            <br><br>
+
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fechaDeNacimiento" required>
+            <br><br>
+
+            <label>Curso:</label>
+            <select name="curso" required>
+                <option value="1">1º ESO</option>
+                <option value="2">2º ESO</option>
+                <option value="3">3º ESO</option>
+                <option value="4">4º ESO</option>
+            </select>
+            <br><br>
+
+            <label>Email de Educamos:</label>
+            <input type="email" name="email" required>
+            <br><br>
+
+            <label>Contraseña de Educamos:</label>
+            <input type="password" name="contrasena" required>
+            <br><br>
+
+            <input type="submit" value="Matricular alumno">
+
+        </form>
+
+    </body>
+
+</html>
